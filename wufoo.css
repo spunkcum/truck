@@ -1,0 +1,26 @@
+/* Wufoo themes */
+.wufoo input#saveForm {
+	background-color: #00adef;
+	color: white;
+	padding: 5px 10px;
+	border:none;
+}
+.wufoo input.text, .wufoo textarea.textarea, .wufoo input.file, .wufoo select.select {
+	color: #000000;
+}
+
+.wufoo li.focused {
+	background-color: #666666;
+}
+
+.wufoo li {
+	width:98%;
+}
+
+.wufoo input {
+	margin-left:1px;
+	margin-right:1px;
+}
+.wufoo input.text, .wufoo select.select {
+	width:100%;
+}
