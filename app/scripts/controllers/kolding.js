@@ -11,5 +11,5 @@
  .controller('KoldingPageController', [KoldingPageController]);
 
  function KoldingPageController(){
- 	document.title = "Kolding";
+ 	document.title = "Program Kolding";
  }

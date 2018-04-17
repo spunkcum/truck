@@ -11,5 +11,5 @@
  .controller('ViborgPageController', [ViborgPageController]);
 
  function ViborgPageController(){
- 	document.title = "Viborg";
+ 	document.title = "Program Viborg";
  }

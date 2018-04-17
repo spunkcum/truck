@@ -11,5 +11,5 @@
  .controller('RoskildePageController', [RoskildePageController]);
 
  function RoskildePageController(){
- 	document.title = "Sjællandsringen";
+ 	document.title = "Program Roskilde";
  }
