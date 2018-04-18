@@ -29,7 +29,7 @@ angular
 
 .config(['AnalyticsProvider', function (AnalyticsProvider) {
    // Add configuration code as desired
-   AnalyticsProvider.setAccount('UU-69011597-13');  //UU-XXXXXXX-X should be your tracking code
+   AnalyticsProvider.setAccount('UA-69011597-13');  //UU-XXXXXXX-X should be your tracking code
 }]).run(['Analytics', function(Analytics) { }])
 
 .config(function ($routeProvider) {
