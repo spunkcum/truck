@@ -24,7 +24,7 @@
 	<link rel="stylesheet" href="styles/main.css">
 	<!-- endbuild -->
 </head>
-<body ng-app="mercedesApp" ng-controller="MainController">
+<body id="ng-app" ng-app="mercedesApp" ng-controller="MainController">
 	<!--[if lte IE 8]>
 		Du bruger en virkelig gammel browser! Vi anbefaler du opdatere!
 	<![endif]-->
@@ -89,10 +89,7 @@
 		</div>
 	</div>
 
-	<div class="container content" ng-view>
-	</div>
-
-	<div class="footer" style="height: 50px;">
+	<div class="container content mb-5" ng-view>
 	</div>
 
 	<!-- build:js scripts/vendor.js -->

@@ -24,7 +24,7 @@ angular
 	'ngSanitize',
 	'ngTouch',
 	'angular-google-analytics'
-])
+	])
 .controller('MainController', ['$rootScope', '$scope', MainController])
 
 .config(['AnalyticsProvider', function (AnalyticsProvider) {
@@ -63,7 +63,7 @@ function MainController($rootScope, $scope){
 	document.title = "Forside";
 	$scope.page = "forside";
 
-	var url = document.URL.split("#!");
+	/*var url = document.URL.split("#!");
 
 	if(url[(url.length - 1)].includes("forside")){
 		$scope.page = "forside";
@@ -73,7 +73,7 @@ function MainController($rootScope, $scope){
 		$scope.page = "kolding";
 	}else if(url[(url.length - 1)].includes("roskilde")){
 		$scope.page = "roskilde";
-	}
+	}*/
 
 	$scope.selectPage = function(page){
 		$scope.page = page;
