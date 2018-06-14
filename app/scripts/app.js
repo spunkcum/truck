@@ -14,6 +14,8 @@ angular
 	'mercedesApp.viborg',
 	'mercedesApp.kolding',
 	'mercedesApp.roskilde', 
+	'mercedesApp.gallery',
+	
 
 	'ngAnimate',
 	'ngAria',
@@ -54,28 +56,35 @@ angular
 		controller: 'RoskildePageController',
 		controllerAs: 'roskilde'
 	})
+	.when('/galleri', {
+		templateUrl: 'views/gallery.html',
+		controller: 'GalleryController',
+		controllerAs: 'gallery'
+	})
 	.otherwise({
-		redirectTo: '/forside'
+		redirectTo: '/galleri'
 	});
 });
 
 function MainController($rootScope, $scope){
-	document.title = "Forside";
-	$scope.page = "forside";
-
-	/*var url = document.URL.split("#!");
-
-	if(url[(url.length - 1)].includes("forside")){
-		$scope.page = "forside";
-	}else if(url[(url.length - 1)].includes("viborg")){
-		$scope.page = "viborg";
-	}else if(url[(url.length - 1)].includes("kolding")){
-		$scope.page = "kolding";
-	}else if(url[(url.length - 1)].includes("roskilde")){
-		$scope.page = "roskilde";
-	}*/
+	document.title = "Galleri";
+	$scope.page = "galleri";
 
 	$scope.selectPage = function(page){
 		$scope.page = page;
 	};
+
+	var url = document.URL.split("#!");
+
+	var urlPath = url[(url.length - 1)];
+
+	if(urlPath.indexOf("galleri") != -1){
+		$scope.page = "galleri";
+	} else if (urlPath.indexOf("roskilde") != -1){
+		$scope.page = "roskilde";
+	} else if (urlPath.indexOf("kolding") != -1){
+		$scope.page = "kolding";
+	} else if (urlPath.indexOf("viborg") != -1){
+		$scope.page = "viborg";
+	}
 }

@@ -15,6 +15,7 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
 	<!-- build:css(.) styles/vendor.css -->
 	<!-- bower:css -->
+	<link rel="stylesheet" href="bower_components/lightgallery.js/dist/css/lightgallery.css" />
 	<!-- endbower -->
 	<!-- endbuild -->
 
@@ -52,9 +53,9 @@
 					<div class="collapse navbar-collapse" id="navbarSupportedContent">
 						<ul class="navbar-nav" style="width: 100%; max-width: 1400px; margin-right: 0; margin-left: auto;">
 
-							<li class="nav-item" ng-class="{selected : page == 'forside'}">
-								<a href="#!/forside" ng-click="selectPage('forside');" >
-									Tilmelding
+							<li class="nav-item" ng-class="{selected : page == 'galleri'}">
+								<a href="#!/galleri" ng-click="selectPage('galleri');" >
+									Galleri
 								</a>
 							</li>
 							<li class="nav-item" ng-class="{selected : page == 'viborg'}">
@@ -89,7 +90,7 @@
 		</div>
 	</div>
 
-	<div class="container content mb-5" ng-view>
+	<div class="container content mb-lg-5 mb-3" ng-view>
 	</div>
 
 	<!-- build:js scripts/vendor.js -->
@@ -104,6 +105,7 @@
 	<script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
 	<script src="bower_components/angular-touch/angular-touch.js"></script>
 	<script src="bower_components/angular-google-analytics/dist/angular-google-analytics.min.js"></script>
+	<script src="bower_components/lightgallery.js/dist/js/lightgallery.min.js"></script>
 	<!-- endbower -->
 	<!-- endbuild -->
 
@@ -117,6 +119,7 @@
 	<script src="scripts/controllers/viborg.js"></script>
 	<script src="scripts/controllers/kolding.js"></script>
 	<script src="scripts/controllers/roskilde.js"></script>
+	<script src="scripts/controllers/gallery.js"></script>
 	<!-- endbuild -->
 </body>
 </html>
